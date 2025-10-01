@@ -1,0 +1,8 @@
+.old_price{
+    color: grey;
+    text-decoration: line-through;
+    margin-left: 30px;
+}
+.item .card{
+    margin-bottom: 20px;
+}
