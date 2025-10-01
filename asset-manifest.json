@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/foodweb/static/css/main.7252bd63.css",
+    "main.js": "/foodweb/static/js/main.b48abdf2.js",
+    "static/js/488.969d840c.chunk.js": "/foodweb/static/js/488.969d840c.chunk.js",
+    "static/media/contactus.jpg": "/foodweb/static/media/contactus.7f8f4c9ea447e19c7093.jpg",
+    "static/media/banner1.webp": "/foodweb/static/media/banner1.be33a578f46e7e5e6c72.webp",
+    "static/media/bootstrap-icons.woff?": "/foodweb/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/offer_banner.webp": "/foodweb/static/media/offer_banner.b94bd39f937f520a184c.webp",
+    "static/media/offer2.webp": "/foodweb/static/media/offer2.b0d75baff0f27c6604cf.webp",
+    "static/media/bootstrap-icons.woff2?": "/foodweb/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/offer1.webp": "/foodweb/static/media/offer1.6d86f820edc735348d09.webp",
+    "static/media/Pizza-cheese-greenleaf.webp": "/foodweb/static/media/Pizza-cheese-greenleaf.009ad8c2e837132a13b3.webp",
+    "static/media/shop_banner.jpg": "/foodweb/static/media/shop_banner.a99a8f94673fbbbe28b1.jpg",
+    "static/media/chicken-burger.webp": "/foodweb/static/media/chicken-burger.eb35aa347b60dbb8b827.webp",
+    "static/media/butter-sandwich.webp": "/foodweb/static/media/butter-sandwich.82d84714439c5d3fd261.webp",
+    "static/media/Cheese-Garlic-Bread.webp": "/foodweb/static/media/Cheese-Garlic-Bread.a01eaef89b2454b2a8e5.webp",
+    "static/media/US-Pizza.webp": "/foodweb/static/media/US-Pizza.0300ef73b6bbc0bbf953.webp",
+    "static/media/burger.webp": "/foodweb/static/media/burger.d148ba77995664f40c42.webp",
+    "static/media/chicken-grilled-sandwich.webp": "/foodweb/static/media/chicken-grilled-sandwich.63266d1ae1e065bb8c7b.webp",
+    "static/media/Cheese-Chilli-Fries.webp": "/foodweb/static/media/Cheese-Chilli-Fries.fa1ccde436c39a048b03.webp",
+    "static/media/fries.webp": "/foodweb/static/media/fries.8e07386a91cdf46d5e9c.webp",
+    "static/media/cheese-sandwich.webp": "/foodweb/static/media/cheese-sandwich.de099cf7745f34e84774.webp",
+    "index.html": "/foodweb/index.html",
+    "main.7252bd63.css.map": "/foodweb/static/css/main.7252bd63.css.map",
+    "main.b48abdf2.js.map": "/foodweb/static/js/main.b48abdf2.js.map",
+    "488.969d840c.chunk.js.map": "/foodweb/static/js/488.969d840c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7252bd63.css",
+    "static/js/main.b48abdf2.js"
+  ]
+}
