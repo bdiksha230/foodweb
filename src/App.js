@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {HashRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -21,10 +21,10 @@ import Allproducts from './pages/Allproducts';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/foodweb">
+      <HashRouter >
         <Nav />
         <Routes>
-          <Route exact path="/foodweb" element={<Shop />} />
+          <Route exact path="/" element={<Shop />} />
           <Route path="/allproduct" element={<Allproducts banner={men_banner} category="allproduct" />} /> 
           <Route path="/contact" element={<ShopCategory  category="contact" />} />
           <Route path="/product" element={<Product />}>
@@ -34,7 +34,7 @@ function App() {
           <Route path="/login" element={<LoginSinup />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );

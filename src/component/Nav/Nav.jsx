@@ -19,7 +19,7 @@ const Nav = () => {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item"    onClick={() => {setMenu("shop")}} >
                                 <NavLink className="nav-link active"
-                              to="/foodweb">Shop{menu==="shop" ? <hr/>: <></>}</NavLink>
+                              to="/">Shop{menu==="shop" ? <hr/>: <></>}</NavLink>
                             </li>
                             <li className="nav-item" onClick={() => {setMenu("allproduct")}}>
                                 <NavLink className="nav-link"
