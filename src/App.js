@@ -21,10 +21,10 @@ import Allproducts from './pages/Allproducts';
 function App() {
   return (
     <div className="App">
-      <HashRouter >
+      <HashRouter basename="foodweb">
         <Nav />
         <Routes>
-          <Route exact path="/" element={<Shop />} />
+          <Route exact path="/foodweb" element={<Shop />} />
           <Route path="/allproduct" element={<Allproducts banner={men_banner} category="allproduct" />} /> 
           <Route path="/contact" element={<ShopCategory  category="contact" />} />
           <Route path="/product" element={<Product />}>
