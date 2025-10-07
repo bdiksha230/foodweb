@@ -17,9 +17,9 @@ const CartItems = () => {
             <hr />
             <div className="">
                 {allproduct.map((e) => {
-                     if (cartItem[e.id] > 0) {
+                    if (cartItem[e.id] > 0) {
                         return <div>
-                            <div className="cartitem_formate">
+                            <div className="cartitem_formate" key={e.id}>
                                 <img src={e.image} alt="" />
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
@@ -28,10 +28,11 @@ const CartItems = () => {
                                 <span onClick={() => { removeCart(e.id) }}>remove</span>
                             </div>
                         </div>
-                    }
+                    } 
                     return null;
                 })}
             </div>
+            
         </div>
     )
 }

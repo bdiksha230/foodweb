@@ -1,11 +1,42 @@
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Nav.css';
 import { NavLink } from 'react-router-dom';
+import { ShopContext } from '../../context/ShopContext';
 
 
 const Nav = () => {
 
     const [menu, setMenu] = useState();
+    const [cartTotalItem, setCartTotalItem] = useState(0);
+    const {cartCount} = useContext(ShopContext);
+
+
+    // run when cart item changes (similart to component did mount);
+    useEffect(() => {
+        let total = 0;
+       if (cartCount && typeof cartCount === "object") {
+      Object.values(cartCount).forEach((qty) => {
+        if (typeof qty === "number" && qty > 0) {
+          total += qty;
+        }
+      });
+    }
+
+        setCartTotalItem(total);
+        console.log("total two = ", total);
+        console.log("total three = ", setCartTotalItem);
+    }, [cartCount]);
+    // depency array runn only when art item changes
+
+    useEffect(() => {
+        // similart to component didmount
+        console.log("navbar mounted");
+        return () => {
+            // similart to componentwillmount
+            console.log("navbar unmount")
+        };
+    }, []);
+    console.log("tooooo",cartCount);
 
     return (
         <div>
@@ -44,7 +75,8 @@ const Nav = () => {
 
                         <div className="cart">
                            <NavLink to="/cart"> <button className='btn'>Cart</button>
-                            <div className="nav_cart_count">0</div></NavLink>
+                            <div className="nav_cart_count">{cartTotalItem}</div></NavLink>
+                            
                         </div>
                     </div>
                 </div>

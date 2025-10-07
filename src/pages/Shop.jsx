@@ -1,9 +1,7 @@
-import React from 'react'
-import Banner from '../component/Banner/Banner'
-import Popular from '../component/Poppular/Popular'
-import Offer from '../component/Offer/Offer'
-import Newcollection from '../component/Newcollection/Newcollection'
-import Home from './Home'
+import React from 'react';
+import Banner from '../component/Banner/Banner';
+import Popular from '../component/Poppular/Popular';
+import Offer from '../component/Offer/Offer';
  
 
 const Shop = () => {

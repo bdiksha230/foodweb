@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Item.css'
 import { NavLink } from 'react-router-dom'
+import { ShopContext } from '../../context/ShopContext'
 
 const Item = (props) => {
+    const {addToCart} = useContext(ShopContext);
     return (
         <div className="col-md-4">
             <div className="item">
@@ -19,7 +21,13 @@ const Item = (props) => {
                                 <span className="card-text old_price"> ${props.old_price}</span>
                             </div>
                             <div className="addtocart_buton">
-                                <button className='btn btn-danger' type="button">add to cart</button>
+                                <button className='btn btn-danger' type="button" onClick={() => {
+                                    try {
+                                        addToCart(props.id);
+                                    } catch (err) {
+                                        alert("failed to add item" + err.message);
+                                    }}
+                                    }>add to cart</button>
                             </div>
                         </div>
                     </div>
