@@ -78,6 +78,9 @@ const Nav = () => {
                             <div className="nav_cart_count">{cartTotalItem}</div></NavLink>
                             
                         </div>
+                         <div className="nav">
+                          <NavLink to="">  <button className="btn btn-danger">nav</button></NavLink>
+                        </div>
                     </div>
                 </div>
             </nav>
