@@ -54,12 +54,12 @@ const Nav = () => {
                             </li>
                             <li className="nav-item" onClick={() => {setMenu("allproduct")}}>
                                 <NavLink className="nav-link"
-                                 to="/allproduct">All Products{menu==="allproduct" ? <hr/>: <></>}</NavLink>
+                                 to="/foodweb/allproduct">All Products{menu==="allproduct" ? <hr/>: <></>}</NavLink>
                             </li>
                           
                             <li className="nav-item"   onClick={() => {setMenu("contact")}}>
                                 <NavLink className="nav-link"
-                               to="/contact">Contact{menu==="contact" ? <hr/>: <></>}</NavLink>
+                               to="/foodweb/contact">Contact{menu==="contact" ? <hr/>: <></>}</NavLink>
                             </li>
 
 
@@ -70,11 +70,11 @@ const Nav = () => {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form> */}
                         <div className="login">
-                          <NavLink to="/login">  <button className="btn btn-danger">Login</button></NavLink>
+                          <NavLink to="/foodweb/login">  <button className="btn btn-danger">Login</button></NavLink>
                         </div>
 
                         <div className="cart">
-                           <NavLink to="/cart"> <button className='btn'>Cart</button>
+                           <NavLink to="/foodweb/cart"> <button className='btn'>Cart</button>
                             <div className="nav_cart_count">{cartTotalItem}</div></NavLink>
                             
                         </div>

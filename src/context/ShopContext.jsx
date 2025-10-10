@@ -17,9 +17,7 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
 
     const [cartItem, setCartitem] = useState(getDefaultCart());
-
-    console.log(cartItem);
-
+ 
     // Add to cart
     const addToCart = (itemId) => {
         try {
@@ -27,7 +25,7 @@ const ShopContextProvider = (props) => {
                 ...prev,
                 [itemId]: (prev[itemId] || 0) + 1,
             }));
-            console.log(addToCart);
+            
             console.log("Added item:", itemId, "Cart:", cartItem);
         } catch (err) {
             console.log("error adding to cart error", err);
@@ -47,6 +45,8 @@ const ShopContextProvider = (props) => {
         }
 
     };
+
+    // update the cart count wheneven cart changed
     useEffect(() => {
         console.log("cart changed", cartItem);
     }, [cartItem]);

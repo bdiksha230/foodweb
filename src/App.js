@@ -25,13 +25,13 @@ function App() {
         <Nav />
         <Routes>
           <Route exact path="/foodweb" element={<Shop />} />
-          <Route path="/allproduct" element={<Allproducts banner={men_banner} category="allproduct" />} /> 
-          <Route path="/contact" element={<ShopCategory  category="contact" />} />
-          <Route path="/product" element={<Product />}>
+          <Route path="/foodweb/allproduct" element={<Allproducts banner={men_banner} category="allproduct" />} /> 
+          <Route path="/foodweb/contact" element={<ShopCategory  category="contact" />} />
+          <Route path="/foodweb/product" element={<Product />}>
             <Route path=":productid" element={<Product />} />
           </Route>
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<LoginSinup />} />
+          <Route path="/foodweb/cart" element={<Cart />} />
+          <Route path="/foodweb/login" element={<LoginSinup />} />
         </Routes>
         <Footer />
       </HashRouter>
