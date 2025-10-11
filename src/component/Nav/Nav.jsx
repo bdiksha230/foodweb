@@ -48,6 +48,9 @@ const Nav = () => {
                     </button>
                     <div className="delete-collapse delete-navbar-collapse d-flex" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item"      >
+                                diksha
+                            </li>
                             <li className="nav-item"    onClick={() => {setMenu("shop")}} >
                                 <NavLink className="nav-link active"
                               to="/foodweb">Shop{menu==="shop" ? <hr/>: <></>}</NavLink>
