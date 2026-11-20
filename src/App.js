@@ -24,7 +24,7 @@ function App() {
       <HashRouter  >
         <Nav />
         <Routes>
-          <Route exact path="/foodweb" element={<Shop />} />
+          <Route exact path="/" element={<Shop />} />
           <Route path="/foodweb/allproduct" element={<Allproducts banner={men_banner} category="allproduct" />} /> 
           <Route path="/foodweb/contact" element={<ShopCategory  category="contact" />} />
           <Route path="/foodweb/product" element={<Product />}>
