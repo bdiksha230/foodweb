@@ -53,7 +53,7 @@ const Nav = () => {
                             </li>
                             <li className="nav-item"    onClick={() => {setMenu("shop")}} >
                                 <NavLink className="nav-link active"
-                              to="/foodweb">Shop{menu==="shop" ? <hr/>: <></>}</NavLink>
+                              to="/">Shop{menu==="shop" ? <hr/>: <></>}</NavLink>
                             </li>
                             <li className="nav-item" onClick={() => {setMenu("allproduct")}}>
                                 <NavLink className="nav-link"
